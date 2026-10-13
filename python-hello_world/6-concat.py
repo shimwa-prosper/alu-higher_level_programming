@@ -2,4 +2,4 @@
 str1 = "Holberton"
 str2 = "School"
 # Concatenate the strings
-print(f"Welcome to {str1} {str2}!")
+print("Welcome to " + str1 + " " + str2 + "!")
