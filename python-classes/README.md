@@ -1,1 +1,3 @@
-# Python - Classes and Objects
+# python-classes
+
+Python scripts about classes and objects.
