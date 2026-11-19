@@ -1,3 +1,3 @@
-# Python - Inheritance
+# python-inheritance
 
-This project covers inheritance, `dir()`, `isinstance`, `issubclass` and related Python concepts.
+Python scripts about inheritance.
