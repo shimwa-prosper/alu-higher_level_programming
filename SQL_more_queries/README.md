@@ -1,3 +1,3 @@
-# SQL - More queries
+# SQL_more_queries
 
-This project covers MySQL users and privileges, constraints, joins, subqueries and unions.
+SQL scripts about users, privileges, keys and joins.
