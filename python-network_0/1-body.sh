@@ -1,3 +1,3 @@
 #!/bin/bash
 # Displays the body of a 200 status code response from a URL
-curl -sL -w "\n%{http_code}" "$1" | awk 'BEGIN{RS="";FS="\n"} $NF=="200"{$NF=""; sub(/\n$/,""); print}'
+[ "$(curl -sL -o /tmp/b -w "%{http_code}" "$1")" = "200" ] && cat /tmp/b && rm -f /tmp/b || rm -f /tmp/b
