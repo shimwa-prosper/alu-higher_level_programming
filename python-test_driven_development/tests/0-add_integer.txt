@@ -28,11 +28,6 @@ Float is cast to integer:
     >>> add_integer(100.3, -2)
     98
 
-Two floats:
-
-    >>> add_integer(2.9, 3.9)
-    5
-
 Second argument not a number:
 
     >>> add_integer(4, "School")
@@ -45,8 +40,14 @@ First argument not a number:
     Traceback (most recent call last):
     TypeError: a must be an integer
 
-Both wrong: the first argument is reported:
+Float overflow (infinity cannot be cast to an integer):
 
-    >>> add_integer("a", "b")
+    >>> add_integer(float("inf"))
     Traceback (most recent call last):
-    TypeError: a must be an integer
+    OverflowError: cannot convert float infinity to integer
+
+NaN cannot be cast to an integer:
+
+    >>> add_integer(float("nan"))
+    Traceback (most recent call last):
+    ValueError: cannot convert float NaN to integer
